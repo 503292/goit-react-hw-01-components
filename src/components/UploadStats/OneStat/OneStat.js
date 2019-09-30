@@ -7,11 +7,7 @@ const OneStat = ({ stats }) => {
     <>
       <ul className={css.statsList}>
         {stats.map(stat => (
-          <li
-            key={stat.id}
-            className={css.item}
-            //   style={{ backgroundColor: randomColor() }}
-          >
+          <li key={stat.id} className={css.item}>
             <span className={css.label}>{stat.label}</span>
             <span className={css.percentage}>{stat.percentage}%</span>
           </li>
