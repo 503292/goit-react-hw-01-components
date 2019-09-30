@@ -5,16 +5,18 @@ import css from './OneStat.module.css';
 const OneStat = ({ stats }) => {
   return (
     <>
-      {stats.map(stat => (
-        <li
-          key={stat.id}
-          className={css.item}
-          //   style={{ backgroundColor: randomColor() }}
-        >
-          <span className={css.label}>{stat.label}</span>
-          <span className={css.percentage}>{stat.percentage}%</span>
-        </li>
-      ))}
+      <ul className={css.statsList}>
+        {stats.map(stat => (
+          <li
+            key={stat.id}
+            className={css.item}
+            //   style={{ backgroundColor: randomColor() }}
+          >
+            <span className={css.label}>{stat.label}</span>
+            <span className={css.percentage}>{stat.percentage}%</span>
+          </li>
+        ))}
+      </ul>
     </>
   );
 };
