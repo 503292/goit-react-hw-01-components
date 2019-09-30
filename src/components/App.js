@@ -1,11 +1,10 @@
 import React from 'react';
-import Panel from './Panel/Panel';
-import user from '../user.json';
+import Card from './SocialNetwork/Card/Card';
 
 const App = () => {
   return (
     <>
-      <Panel isOpen user={user} />
+      <Card />
     </>
   );
 };
