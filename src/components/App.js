@@ -1,10 +1,10 @@
 import React from 'react';
-import Profile from './ProfileSocial/Profile/Profile';
+import ProfileWrap from './ProfileSocial/ProfileWrap/ProfileWrap';
 
 const App = () => {
   return (
     <>
-      <Profile />
+      <ProfileWrap />
     </>
   );
 };
