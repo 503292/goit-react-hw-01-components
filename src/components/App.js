@@ -1,10 +1,10 @@
 import React from 'react';
-import Card from './SocialNetwork/Card/Card';
+import Profile from './ProfileSocial/Profile/Profile';
 
 const App = () => {
   return (
     <>
-      <Card />
+      <Profile />
     </>
   );
 };

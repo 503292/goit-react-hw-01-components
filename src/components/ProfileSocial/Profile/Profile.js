@@ -1,8 +1,8 @@
 import React from 'react';
 import user from '../../../userData';
-import css from './Card.module.css';
+import css from './Profile.module.css';
 
-const Card = () => {
+const Profile = () => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
@@ -30,4 +30,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Profile;
