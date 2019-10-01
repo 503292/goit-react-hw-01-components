@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import css from './OneStat.module.css';
+import css from './StatOne.module.css';
 
-const OneStat = ({ stats }) => {
+const StatOne = ({ stats }) => {
   return (
     <>
       <ul className={css.statsList}>
@@ -17,7 +17,7 @@ const OneStat = ({ stats }) => {
   );
 };
 
-OneStat.propTypes = {
+StatOne.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -27,4 +27,4 @@ OneStat.propTypes = {
   ).isRequired,
 };
 
-export default OneStat;
+export default StatOne;

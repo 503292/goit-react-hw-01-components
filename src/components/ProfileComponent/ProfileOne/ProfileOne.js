@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import css from './Profile.module.css';
+import css from './ProfileOne.module.css';
 
-const Profile = ({ user }) => {
+const ProfileOne = ({ user }) => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
@@ -30,7 +30,7 @@ const Profile = ({ user }) => {
   );
 };
 
-Profile.propTypes = {
+ProfileOne.propTypes = {
   user: PropTypes.shape({
     name: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
@@ -44,4 +44,4 @@ Profile.propTypes = {
   }).isRequired,
 };
 
-export default Profile;
+export default ProfileOne;

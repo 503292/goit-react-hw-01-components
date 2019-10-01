@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import OneStat from '../OneStat/OneStat';
+import StatOne from '../StatOne/StatOne';
 import css from './Stats.module.css';
 
 const Stats = ({ title, stats }) => {
   return (
     <section className={css.statsSection}>
       <h2 className={css.title}>{title}</h2>
-      <OneStat stats={stats} />
+      <StatOne stats={stats} />
     </section>
   );
 };
